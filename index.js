@@ -14,7 +14,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/builderauthcallback', function(request, response) {
-    debug(request);
+    debug(request.params);
   response.send('success!');
 });
 
