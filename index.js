@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
 
-var debug = require('debug')('phonegapbuilder:index');
+//var debug = require('debug')('phonegapbuilder:index');
+var debug = console.log;
 
 debug('builder has started');
 
