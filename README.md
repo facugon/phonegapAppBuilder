@@ -37,28 +37,30 @@ For more information about using Node.js on Heroku, see these Dev Center article
 
 ## Create phonegap account
 
-configurar cuenta (https://build.phonegap.com/people/edit#show-client)    
-vincular con cuenta de github    
-crear app (necesita una url , Heroku)    
-registrar la app en settings de phonegap (obtener el client_id y client_secret)    
-obtener un auth token    
-usarlo para vincular la app creada previamente con la cuenta de phonegap para poder buildear     
+- [configurar cuenta phonegap](https://build.phonegap.com/people/edit#show-client)    
+- [vincular con cuenta de github](https://github.com/)    
+- [crear app](https://dashboard.heroku.com/apps)    
+- registrar la app en settings de phonegap (obtener el client_id y client_secret)    
+- obtener un auth token    
+- usarlo para vincular la app creada previamente con la cuenta de phonegap para poder buildear     
 
 
 **we need to get**
 
-> client_id    
-> client_secret    
-> user auth_token    
+- client_id    
+- client_secret    
+- user auth_token    
+
 
 ```sh
-curl -X POST https://build.phonegap.com/authorize?client_id=abcdef&client_secret=123456&auth_token=789hij    
+$ curl -X POST https://build.phonegap.com/authorize?client_id=abcdef&client_secret=123456&auth_token=789hij    
 ```
 
 **to obtain**
 
-> app_access_token   
+- app_access_token   
 
 ```sh
-GET https://build.phonegap.com/api/v1/me?access_token=123456
+$ GET https://build.phonegap.com/api/v1/me?access_token=123456
 ```
+
