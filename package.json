@@ -4,11 +4,12 @@
   "description": "an app builder",
   "main": "index.js",
   "scripts": {
-    "start": "DEBUG=phonegapbuilder:* node index.js"
+    "start": "PG_CLIENT_ID=b2f2ce68d15f33a12e8f PG_CLIENT_SECRET=06ee5aaf87e452a56b712c8ce366f8fb7fd59dd9 PG_ACCESS_TOKEN=6f267f7b022e993f86c2a810b9 DEBUG=phonegapbuilder:* node index.js"
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "express": "~4.9.x"
+    "express": "~4.9.x",
+    "phonegap-build-api": "^0.3.3"
   },
   "engines": {
     "node": "0.12.2"
